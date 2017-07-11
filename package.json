@@ -1,0 +1,32 @@
+{
+  "name": "consulta-placa",
+  "version": "1.0.0",
+  "description": "App para consultar placa de veiculos",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "main": "server.js",
+  "keywords": [
+    "placa",
+    "veiculos",
+    "carro",
+    "moto",
+    "caminhao",
+    "detran"
+  ],
+  "author": {
+    "name": "WGenial",
+    "email": "contato@wgenial.com.br",
+    "url": "http://wgenial.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "sinesp-nodejs": "^1.0.4"
+  },
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  }
+}
