@@ -14,6 +14,7 @@ app.get("/", function(req, res, next) {
 app.get("/:plate", function(req, res, next) {
   var plate = req.params.plate.replace(/\-/g,'');
   sinesp.consultaPlaca(plate, function(response) {
+    res.setHeader('Cache-Control', 'public, max-age=86400'); // 1 day
     res.json(response);
   });
 });
