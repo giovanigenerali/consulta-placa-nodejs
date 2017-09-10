@@ -13,7 +13,7 @@ app.use(morgan('dev'));
 app.use(cors());
 
 // set constants
-app.set('port', process.env.OPENSHIFT_NODEJS_PORT || 3000);
+app.set('port', process.env.OPENSHIFT_NODEJS_PORT || 8080);
 app.set('ip', process.env.OPENSHIFT_NODEJS_IP || 'localhost');
 app.set('site', 'https://github.com/wgenial/consulta-placa');
 

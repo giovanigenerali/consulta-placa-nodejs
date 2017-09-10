@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM node:alpine
 
 # File Author / Maintainer
 LABEL authors="WGenial <developers@wgenial.com.br>"
