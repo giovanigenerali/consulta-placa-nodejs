@@ -13,8 +13,7 @@ app.use(morgan('dev'));
 app.use(cors());
 
 // set constants
-app.set('port', process.env.OPENSHIFT_NODEJS_PORT || 8080);
-app.set('ip', process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1');
+app.set('port', process.env.PORT || 3000);
 app.set('site', 'https://github.com/wgenial/consulta-placa');
 
 // default and redirect to github project
@@ -32,7 +31,7 @@ app.get("/:plate", (req, res) => {
 });
 
 // start server
-app.listen(app.get('port'), app.get('ip'), () => {
+app.listen(app.get('port'), () => {
   return console.log("Listening on " + app.get('port') + "\nPress CTRL-C to stop server.");
 });
 
