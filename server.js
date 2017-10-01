@@ -3,8 +3,8 @@ var express = require('express');
 var sinesp = require('sinesp-nodejs');
 var app = express();
 
-app.set('port', process.env.OPENSHIFT_NODEJS_PORT || 3000);
-app.set('ip', process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1');
+app.set('port', process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080);
+app.set('ip', process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1');
 app.set('site', 'https://github.com/wgenial/consulta-placa');
 
 app.get("/", function(req, res, next) {
