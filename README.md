@@ -6,7 +6,7 @@ Basta você passar via GET a placa do veículo "placa".
 
 ### Placa existente (sem restrição):
 
-[http://placa-wgenial.rhcloud.com/AFT0017](http://placa-wgenial.rhcloud.com/AFT0017)
+[http://localhost:3000/AFT0017](http://localhost:3000/AFT0017)
 
 ```javascript
 {
@@ -29,7 +29,7 @@ Basta você passar via GET a placa do veículo "placa".
 
 ### Placa existente (roubo/furto):
 
-[http://placa-wgenial.rhcloud.com/FFF0012](http://placa-wgenial.rhcloud.com/FFF0012)
+[http://localhost:3000/FFF0012](http://localhost:3000/FFF0012)
 
 ```javascript
 {
@@ -52,7 +52,7 @@ Basta você passar via GET a placa do veículo "placa".
 
 ### Placa não encontrada:
 
-[http://placa-wgenial.rhcloud.com/AAA0000](http://placa-wgenial.rhcloud.com/AAA0000)
+[http://localhost:3000/AAA0000](http://localhost:3000/AAA0000)
 
 ```javascript
 {
