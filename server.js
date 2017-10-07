@@ -9,8 +9,8 @@ var cache = require('apicache').options({
 .middleware;
 
 
-app.set('port', process.env.PORT || 3000);
-app.set('ip', process.env.IP || '127.0.0.1');
+app.set('port', process.env.PORT || 8080);
+app.set('ip', process.env.IP || '0.0.0.0');
 app.set('site', 'https://github.com/wgenial/consulta-placa');
 
 app.get("/", function(req, res, next) {
