@@ -4,10 +4,7 @@
   "description": "App para consultar placa de veiculos",
   "private": true,
   "scripts": {
-    "start": "node server.js",
-    "start:dev": "nodemon server.js",
-    "install": "set PORT=8080",
-    "zip": "rm -f *.zip .DS* && zip dist_$(date +%Y%m%d_%H%M%S).zip ./* -x *node_modules* *.git* .DS* && echo 'zip created :)' || echo 'zip failure :('"
+    "start": "node server.js"
   },
   "main": "server.js",
   "keywords": [
