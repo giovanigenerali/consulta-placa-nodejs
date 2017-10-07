@@ -1,6 +1,13 @@
 var express = require('express');
 var sinesp = require('sinesp-nodejs');
 var app = express();
+var cache = require('apicache').options({
+  headers: {
+    'cache-control': 'no-cache'
+  }
+})
+.middleware;
+
 
 app.set('port', process.env.PORT || 3000);
 app.set('ip', process.env.IP || '127.0.0.1');
@@ -10,7 +17,7 @@ app.get("/", function(req, res, next) {
   res.redirect(app.get('site'));
 });
 
-app.get("/:plate", function(req, res, next) {
+app.get("/:plate", cache('1 day'), function(req, res, next) {
   var plate = req.params.plate.replace(/\-/g,'');
   sinesp.consultaPlaca(plate, function(response) {
     res.json(response);
