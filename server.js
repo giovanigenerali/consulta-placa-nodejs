@@ -21,4 +21,4 @@ app.listen(app.get('port'), app.get('ip'), function() {
   return console.log("Listening on " + app.get('port') + "\nPress CTRL-C to stop server.");
 });
 
-module.exports = app;
+exports = module.exports = app;
