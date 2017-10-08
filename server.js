@@ -8,7 +8,6 @@ var cache = require('apicache').options({
 })
 .middleware;
 
-
 app.set('port', process.env.PORT || 8080);
 app.set('ip', process.env.IP || '0.0.0.0');
 app.set('site', 'https://github.com/wgenial/consulta-placa');
@@ -25,7 +24,7 @@ app.get("/:plate", cache('1 day'), function(req, res, next) {
 });
 
 app.listen(app.get('port'), app.get('ip'), function() {
-  return console.log("Listening on " + app.get('port') + "\nPress CTRL-C to stop server.");
+  console.log("Listening on " + app.get('port') + "\nPress CTRL-C to stop server.");
 });
 
-exports = module.exports = app;
+module.exports = app;
