@@ -24,7 +24,7 @@ app.get("/:plate", cache('1 day'), function(req, res, next) {
 });
 
 app.listen(app.get('port'), app.get('ip'), function() {
-  console.log("Listening on " + app.get('port') + "\nPress CTRL-C to stop server.");
+  return console.log("Listening on " + app.get('port') + "\nPress CTRL-C to stop server.");
 });
 
-module.exports = app;
+exports = module.exports = app;
