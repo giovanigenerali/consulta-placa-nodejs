@@ -1,8 +1,10 @@
 {
   "name": "consulta-placa",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "App para consultar placa de veiculos",
   "private": true,
+  "license": "MIT",
+  "homepage": "https://github.com/wgenial/consulta-placa-nodejs",
   "scripts": {
     "start": "node server.js"
   },
@@ -18,12 +20,11 @@
   "author": {
     "name": "WGenial",
     "email": "contato@wgenial.com.br",
-    "url": "http://wgenial.com"
+    "url": "http://wgenial.com.br"
   },
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.15.3",
-    "sinesp-nodejs": "^1.0.4"
+    "express": "^4.16.2",
+    "sinesp-nodejs": "^1.0.5"
   },
   "engines": {
     "node": ">= 0.6.0",
