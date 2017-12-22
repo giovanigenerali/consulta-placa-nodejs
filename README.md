@@ -1,5 +1,7 @@
 # Consulta Placa de Veículo SINESP
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1e7663a9e9174062852005b20da45213)](https://www.codacy.com/app/giovanigenerali/consulta-placa-nodejs?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=wgenial/consulta-placa-nodejs&amp;utm_campaign=Badge_Grade)
+
 ## Como funciona?
 
 Basta você passar via GET a placa do veículo "placa".
