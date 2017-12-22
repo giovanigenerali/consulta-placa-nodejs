@@ -11,7 +11,7 @@ app.get("/", function(req, res, next) {
 });
 
 app.get("/:plate", function(req, res, next) {
-  var plate = req.params.plate.replace(/\-/g,'');
+  var plate = req.params.plate.replace(/\W/g,'');
   sinesp.consultaPlaca(plate, function(response) {
     res.json(response);
   });
