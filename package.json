@@ -1,6 +1,6 @@
 {
   "name": "consulta-placa",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "App para consultar placa de veiculos",
   "private": true,
   "license": "MIT",
