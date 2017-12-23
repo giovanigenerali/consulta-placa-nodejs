@@ -6,7 +6,8 @@
   "license": "MIT",
   "homepage": "https://github.com/wgenial/consulta-placa-nodejs",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js",
+    "start:dev": "nodemon server.js"
   },
   "main": "server.js",
   "keywords": [
