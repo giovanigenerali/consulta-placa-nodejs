@@ -6,7 +6,7 @@
   "license": "MIT",
   "homepage": "https://github.com/wgenial/consulta-placa-nodejs",
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "main": "server.js",
   "keywords": [
@@ -29,5 +29,8 @@
   "engines": {
     "node": ">= 0.6.0",
     "npm": ">= 1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.3"
   }
 }
