@@ -14,13 +14,25 @@
 
 ## Iniciar aplicação
 
-- desenvolvimento
+**desenvolvimento**
+
+- via npm
 
   ```npm run start:dev```
 
-- produção
+- via yarn
+
+  ```yarn run start:dev```
   
+**produção**
+
+- via npm
+
   ```npm start```
+  
+-  via yarn
+
+```yarn start```
 
 ## Como funciona?
 
