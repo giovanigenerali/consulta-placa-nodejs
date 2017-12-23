@@ -32,7 +32,7 @@
   
 -  via yarn
 
-```yarn start```
+  ```yarn start```
 
 ## Como funciona?
 
