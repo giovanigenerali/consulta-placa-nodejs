@@ -18,21 +18,21 @@
 
 - via npm
 
-  ```npm run start:dev```
+    ```npm run start:dev```
 
 - via yarn
 
-  ```yarn run start:dev```
-  
+    ```yarn run start:dev```
+
 **produção**
 
 - via npm
 
-  ```npm start```
+    ```npm start```
   
 -  via yarn
-
-  ```yarn start```
+    
+    ```yarn start```
 
 ## Como funciona?
 
